@@ -83,7 +83,7 @@
                     int pid = int.Parse(Console.ReadLine());
                     var patienthandling = pat.GetPatientById(pid);
                     if (patienthandling != null)
-                        Console.WriteLine($"{patient.PatientId} - {patient.Name} - {patient.Age}");
+                        Console.WriteLine($"{patienthandling.patientId} - {patienthandling.patientName} - {patienthandling.Age}");
                     else
                         Console.WriteLine("Patient not found");
                     break;
